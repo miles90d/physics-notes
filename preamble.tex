@@ -1,0 +1,37 @@
+\documentclass[color=black, lang=en]{elegantnote}
+
+\usepackage[utf8x]{inputenc}
+\usepackage{exercise}
+\usepackage{mathtools}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{commath}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\title{Physics 221}
+
+\author{Miles} \institute{Tacoma Community College}
+\date{\today}
+
+\def\arpair#1#2{\vec{F}_{\mathrm{#1~on~#2}}}
+\def\magarpair#1#2{F_{\mathrm{#1~on~#2}}}
+\def\tarpair#1#2{\vec{T}_{\mathrm{#1~on~#2}}}
+\def\magtarpair#1#2{T_{\mathrm{#1~on~#2}}}
+\newcommand{\fnetx}[1][{}]{\left(F_{#1\mathrm{net}}\right)_x}
+\newcommand{\fnet}{\vec{F}_{\mathrm{net}}} \DeclareSIUnit\revolution{rev}
+\newcommand{\on}{\mathrm{~on~}}
+\newcommand{\fin}{\mathrm{f}}
+\newcommand{\ini}{\mathrm{i}}
+\newcommand{\sys}{\mathrm{sys}}
+\newcommand{\ext}{\mathrm{ext}}
+\newcommand{\tot}{\mathrm{tot}}
+\newcommand{\mrint}{\mathrm{int}}
+\newcommand{\magfsp}{F_\mathrm{Sp}}
+\newcommand{\sfmax}{f_{\mathrm{s~max}}}
+
+\newcommand{\incfig}[1]{%
+\def\svgwidth{\columnwidth} \import{./figures/}{#1.pdf_tex} }
